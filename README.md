@@ -1,3 +1,5 @@
+#Installing Red Hat Openshift Local on Mac M-Series Chip
+
 Testing OpenShift locally on a Mac with these powerful processors can be a fast and efficient way to start learning about OpenShift. In this guide, I will walk you through the process of setting up OpenShift on your Mac and also deploy and test your first web app. By leveraging tools compatible with ARM architecture, you’ll quickly gain hands-on experience and accelerate your learning process.
 
 Before we begin, you’ll need to get a few things in place:
