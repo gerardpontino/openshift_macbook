@@ -21,8 +21,11 @@ Before we begin, you’ll need to get a few things in place:
 
 **Important**: In this window, click on “Copy Pull Secret.” You’ll need this later when setting up CRC in Step 3.
 
+![02](https://github.com/user-attachments/assets/e131c91f-0c92-4332-b6b9-c63aa1cd5a5b)
 
 - Launch the downloaded installer to install the Red Hat OpenShift Local.
+
+![03](https://github.com/user-attachments/assets/8b80fde7-38f0-4687-a2fa-600c5967a7cf)
 
 ### 3. Open the Terminal application on your mac and run the following command to set up CRC:
 
@@ -30,6 +33,7 @@ Before we begin, you’ll need to get a few things in place:
 crc setup
 ```
 
+![04](https://github.com/user-attachments/assets/118e0127-9af2-466c-bfb2-86f2a5f8c6ba)
 
 After the setup is complete, start the OpenShift Local cluster by running:
 
@@ -39,33 +43,47 @@ crc start
 
 During this step, you will be prompted to enter the pull secret. This is the pull secret you copied earlier in Step 2. Paste it when prompted to continue with the cluster setup.
 
+![05](https://github.com/user-attachments/assets/9708369e-0c40-49c3-9930-7c96eecc03dd)
 
 Once the OpenShift cluster starts, the terminal will display the URL for accessing the web console. It will also provide the credentials for both the admin and developer accounts.
 
+![06](https://github.com/user-attachments/assets/ba8be28c-1d29-436b-839f-7cb8d7211246)
 
 ### 4. Access the Openshift Web Console
 
 Attempt to log in using the credentials provided. You can use either the admin credentials (kubeadmin) or the developer credentials. Verify that you can successfully access the OpenShift web console with both sets of credentials.
 
+![07](https://github.com/user-attachments/assets/c8e241f8-6b17-40e5-b814-ae1ff92e9556)
 
 Once logged in successfully, you should see the OpenShift web console dashboard. Below is a sample screenshot of the page for reference:
 
+![08](https://github.com/user-attachments/assets/9a406554-51c9-4fb6-a4d2-5d5220c7428e)
+
 ### 5. Using OpenShift CLI (oc) in your local terminal
 
-The OpenShift CLI (oc) is essential for interacting with your OpenShift cluster from the command line. Here’s how to install it:
+The OpenShift CLI (``oc``) is essential for interacting with your OpenShift cluster from the command line. Here’s how to install it:
 
-In the Openshift web console, click on the “?” icon on the upper right of page, then select Command Line Tools.
+In the Openshift web console, click on the “?” icon on the upper right of page, then select ``Command Line Tools``.
 
+![09](https://github.com/user-attachments/assets/918b431f-fb9b-44ae-921d-cae815f40681)
 
 Select Download oc for Mac for ARM 64
+
+![10](https://github.com/user-attachments/assets/9fe717ad-c52b-43f3-be9d-b4131d96dfa6)
 
 ### 6. Authenticate to the Openshift environment.
 
 In the upper right, click the username and select Copy login command from the drop down.
 
+![11](https://github.com/user-attachments/assets/5fb15f43-3be4-4bb9-b457-8d3dda39a1d1)
+
 Copy the login command with the token.
 
+![12](https://github.com/user-attachments/assets/64ec8987-dc62-4beb-8a27-668ebd753b74)
+
 Paste the login command in the terminal to log into the environment.
+
+![13](https://github.com/user-attachments/assets/0842750d-e01e-4694-9997-e3d7318853bb)
 
 ## Deploying your first test Application
 In this example, we will be using this sample from github https://github.com/mosuke5/microservices-demo-openshift=
@@ -84,10 +102,14 @@ Receiving objects: 100% (142/142), 4.44 MiB | 1.99 MiB/s, done.
 Resolving deltas: 100% (61/61), done.
 ```
 
+![14](https://github.com/user-attachments/assets/1aea98e0-c1f4-4397-9535-60c5ee6f85c0)
+
 #### Open the OpenShift Console:
 
 Navigate to the OpenShift web console at the URL you obtained earlier.
 Check the status of your deployments to ensure that they are running correctly. Look for the application you deployed and verify that the pods are up and running.
+
+![15](https://github.com/user-attachments/assets/cd5f479e-6ff5-4988-9768-e7446d71a247)
 
 #### Locate the Application Route:
 
@@ -95,9 +117,13 @@ In the OpenShift console, go to the Networking section and click on Routes.
 Find the route for the front-end application in the list.
 Copy the URL provided under the Location column. This URL will be used to access the front-end application.
 
+![16](https://github.com/user-attachments/assets/b300bd2c-2caf-45fc-a771-e8a3f62a7fa6)
+
 #### Access the Application:
 
 Open your web browser and paste the copied URL to access the deployed application.
+
+![17](https://github.com/user-attachments/assets/7a4be257-5d54-4acc-ac7c-b72c23e24c72)
 
 ...
 
